@@ -24,7 +24,7 @@
 	    ...
 	}
 	
-	----------->First, there is a lot of misinformation about parameter passing in Java, like "objects are passed by reference, 
+--->First, there is a lot of misinformation about parameter passing in Java, like "objects are passed by reference, 
 				primitives are passed by value" which is not true. Everything is passed by value.
 				You're not passing an object by reference in Java, you're passing an object reference by value. Boolean b does 
 				not hold a Boolean object, it holds a reference (a pointer) to a Boolean object.
@@ -33,7 +33,7 @@
 				o with an immutable object, and as they are passed by value (better said, their references are passed by value),
 				you cannot achieve what you desire. You'll need to have a mutable object instead, like @rob mentioned.
 				
-	----------->The problem is that you are reassigning b in calledMethod. A reassignment in calledMethod only reassigns the 
+--->The problem is that you are reassigning b in calledMethod. A reassignment in calledMethod only reassigns the 
 				variable declared in that method's parameter list; it does not modify the variable declared in the caller's scope.
 				To do what you want to achieve, you could either convert b to a field, or create a MutableBoolean class which 
 				allows you to do something like b.setValue(false).
