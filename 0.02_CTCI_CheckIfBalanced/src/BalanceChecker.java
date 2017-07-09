@@ -1,11 +1,13 @@
 /**
  * @author Amogh Vinod
- *
+ * Problem : Check is a binary tree is balanced. A tree is balanced if the heights of the two 
+ * 			 subtrees of any node is the tree never differ by more than 1.
  * 
  */
 
 /*
  * Learning: 
+ * 
  * private CustomObject1 callingMethod(){
 	    Boolean b = Boolean.TRUE;
 	    List<CustomObject2> list = this.calledMethod(b);
